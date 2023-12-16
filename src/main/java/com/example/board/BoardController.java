@@ -53,6 +53,6 @@ public class BoardController {
             System.out.println("데이터 삭제 실패 ");
         else
             System.out.println("데이터 삭제 성공!!!");
-        return "redirect:boardlist";
+        return "redirect:/board/boardlist";
     }
 }

@@ -97,6 +97,14 @@
             <td>${u.regdate}</td>
             <td><a href="editform/${u.seq}">edit</a></td>
             <td><a href="javascript:delete_ok('${u.seq}')">delete</a></td>
+<%--            <td><a href="deleteok.jsp?seq=${u.seq}" onclick="return confirm('Do you really want to delete?')">delete</a></td>--%>
+<%--            <td>--%>
+<%--                <a href="$deleteok.jsp?seq=${u.seq}"--%>
+<%--&lt;%&ndash;                   &lt;%&ndash;%>--%>
+<%--&lt;%&ndash;                       System.out.println();&ndash;%&gt;--%>
+<%--&lt;%&ndash;                   %>&ndash;%&gt;--%>
+<%--                   onclick="return confirm('Do you really want to delete?')">delete</a>--%>
+<%--            </td>--%>
         </tr>
     </c:forEach>
 </table>
