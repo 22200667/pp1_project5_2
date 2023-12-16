@@ -47,7 +47,7 @@ public class BoardDAO {
     }
 
     public List<BoardVO> getBoardList() {
-        String sql = "select * from BOARD order by regdate desc";
+        String sql = "select * from BOARD order by category desc";
         return jdbcTemplate.query(sql, new BoardRowMapper());
     }
 }

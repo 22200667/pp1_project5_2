@@ -77,22 +77,24 @@
     </script>
 </head>
 <body>
-<h1>PP1 </h1>
+<h1>Movie Recommendation Site </h1>
 <table id="list" width="90%">
     <tr>
         <th>Id</th>
         <th>Title</th>
         <th>Writer</th>
-        <th>Content</th>
-        <th>Regdate</th>
+        <th>Genre</th>
+        <th>One-line review</th>
+        <th>Register date</th>
         <th>Edit</th>
         <th>Delete</th>
     </tr>
     <c:forEach items="${list}" var="u">
         <tr>
-            <td>${u.seq}</td>
+            <td><a href="viewform/${u.seq}">${u.seq}</a></td>
             <td>${u.title}</td>
             <td>${u.writer}</td>
+            <td>${u.category}</td>
             <td>${u.content}</td>
             <td>${u.regdate}</td>
             <td><a href="editform/${u.seq}">edit</a></td>

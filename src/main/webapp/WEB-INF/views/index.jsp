@@ -12,13 +12,13 @@
 </head>
 
 <body>
-<h1>실프 project5</h1>
+<h1>영화 추천 사이트</h1>
 <%--<p><a href="board/boardlist">게시판으로 이동</a></p>--%>
 
 <div class="login-wrapper">
     <h2>Login</h2>
 <%--    <form method="post" action="서버의url" id="login-form">--%>
-        <input type="text" id='id' name="userName" placeholder="Email">
+        <input type="text" id='id' name="userName" placeholder="ID">
         <input type="password" id='password' name="userPassword" placeholder="Password">
 
         <input type="submit" id="login" value="Login">
